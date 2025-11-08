@@ -1,1 +1,6 @@
-{ "name": "ai-agents-proto", "private": true, "version": "0.0.0", "type": "module", "scripts": { "dev": "vite", "build": "vite build", "preview": "vite preview" }, "dependencies": { "react": "^18.3.1", "react-dom": "^18.3.1", "react-router-dom": "^6.26.2", "@headlessui/react": "^2.1.10" }, "devDependencies": { "@types/react": "^18.3.11", "@types/react-dom": "^18.3.0", "@vitejs/plugin-react": "^4.3.3", "autoprefixer": "^10.4.20", "postcss": "^8.5.1", "tailwindcss": "^3.4.17", "vite": "^5.4.9" } }
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+})
